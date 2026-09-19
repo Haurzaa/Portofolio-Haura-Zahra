@@ -18,10 +18,13 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
 const glow = document.querySelector(".cursor-glow");
-window.addEventListener("pointermove", (e) => {
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-});
+
+if (glow) {
+  window.addEventListener("pointermove", (e) => {
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+  });
+}
 
 function openLightbox(src, alt) {
   const lightbox = document.getElementById("lightbox");
