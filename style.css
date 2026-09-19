@@ -599,15 +599,17 @@ footer {
   }
   .experience-gallery {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
     margin-top: 20px;
   }
 
   .experience-gallery img {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    height: auto;
+    aspect-ratio: auto;
     object-fit: contain;
+    display: block;
     border-radius: 8px;
     padding: 4px;
   }
