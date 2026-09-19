@@ -597,9 +597,26 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .experience-item {
-    grid-template-columns: 70px 1fr;
-    gap: 20px;
+  .experience-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .experience-gallery img {
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+    padding: 4px;
+  }
+
+  .experience-points {
+    padding-left: 18px;
+  }
+
+  .experience-points li {
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 7px;
   }
   .number {
     display: none;
