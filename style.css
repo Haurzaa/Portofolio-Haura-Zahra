@@ -597,31 +597,9 @@ footer {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .experience-gallery {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
-    margin-top: 20px;
-  }
-
-  .experience-gallery img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: auto;
-    object-fit: contain;
-    display: block;
-    border-radius: 8px;
-    padding: 4px;
-  }
-
-  .experience-points {
-    padding-left: 18px;
-  }
-
-  .experience-points li {
-    font-size: 13px;
-    line-height: 1.55;
-    margin-bottom: 7px;
+  .experience-item {
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
   }
   .number {
     display: none;
