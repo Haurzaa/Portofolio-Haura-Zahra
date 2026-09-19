@@ -598,13 +598,16 @@ footer {
     gap: 30px;
   }
   .experience-gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
     margin-top: 20px;
   }
 
   .experience-gallery img {
+    width: 100%;
     aspect-ratio: 3 / 4;
+    object-fit: contain;
     border-radius: 8px;
     padding: 4px;
   }
